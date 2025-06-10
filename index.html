@@ -6,52 +6,34 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Conference ticket generator</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Coding Conf Ticket Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
-
-  Your Journey to Coding Conf 2025 Starts Here!
-
-  Secure your spot at next year's biggest coding conference.
-
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
-
-  Full Name
-
-  Email Address
-  example@email.com
-
-  GitHub Username
-  @yourusername
-
-  Generate My Ticket
-
-  <!-- Form ends -->
-
-  <!-- Generated tickets starts -->
-
-  Congrats, <!-- Full Name -->! Your ticket is ready.
-
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-  Coding Conf
-  Jan 31, 2025 / Austin, TX
-
-  <!-- Generated tickets ends -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div class="main">
+      <div class="logo">✯ Coding Conf</div>
+      <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p class="subtitle">Secure your spot at next year’s biggest coding conference.</p>
+      <form class="ticket-form">
+        <label for="avatar">Upload Avatar</label>
+        <div class="upload-box">
+          <input type="file" id="avatar" class="upload-icon" accept="image/png, image/jpeg" style="display: none;">
+          <label for="avatar" style="cursor: pointer;">
+            <span>⬆️</span>
+            <span>Drag and drop or click to upload</span>
+          </label>
+        </div>
+        <small>Upload your photo (JPG or PNG, max size: 500KB).</small>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Full Name" required>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="example@email.com" required>
+        <label for="github">GitHub Username</label>
+        <input type="text" id="github" placeholder="@yourusername" required>
+        <button type="submit">Generate My Ticket</button>
+      </form>
+    </div>
   </div>
 </body>
 </html>

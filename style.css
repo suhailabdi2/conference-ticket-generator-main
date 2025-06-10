@@ -1,0 +1,131 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+        url(/assets/images/background-desktop.png),
+        url(/assets/images/pattern-lines.svg),
+        url(/assets/images/pattern-circle.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left top, left bottom, right bottom;
+    background-size: cover, auto, auto;
+    color: hsl(252, 6%, 83%);
+    font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    
+    border-radius: 18px;
+    padding: 2.5rem 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+    max-width: 400px;
+    margin-top: 3rem; /* Added margin for header space */
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #ff6f61;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+    font-family: inherit;
+}
+
+.subtitle {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #b3aee7;
+}
+
+.ticket-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.ticket-form label {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    color: #fff;
+}
+
+.upload-box {
+    
+    border: 2px dashed #b3aee7;
+    border-radius: 10px;
+    padding: 1.2rem;
+    text-align: center;
+    color: #b3aee7;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.upload-icon {
+    font-size: 1.5rem;
+}
+
+.ticket-form small {
+    color: #b3aee7;
+    margin-bottom: 0.5rem;
+}
+
+.ticket-form input {
+    background: rgba(44, 34, 74, 0.8);
+    border: 1px solid #b3aee7;
+    border-radius: 8px;
+    padding: 0.7rem;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.ticket-form input::placeholder {
+    color: #b3aee7;
+    opacity: 1;
+}
+
+.ticket-form button {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.2s;
+}
+
+.ticket-form button:hover {
+    background: #ff3b1f;
+}
